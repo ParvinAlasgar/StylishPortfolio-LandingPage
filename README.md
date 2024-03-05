@@ -1,2 +1,1 @@
-# Stylish-Portfolio
-Web page application
+![screenshot](./src/images/screenshot.png)
