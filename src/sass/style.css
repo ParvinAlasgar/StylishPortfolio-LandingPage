@@ -1,1 +1,171 @@
-/*# sourceMappingURL=style.css.map */
+header a {
+  background-color: #1D809F;
+  transition: background-color 0.7s ease-in-out;
+}
+header a:hover {
+  background-color: #17667F;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  padding: 350px 0;
+  background-image: url(../images/bg-masthead.jpg);
+  height: 100vh;
+}
+header h1 {
+  font-size: 75px;
+}
+header p {
+  font-size: 30px;
+}
+header a {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+footer i {
+  background-color: #1D809F;
+  transition: background-color 0.7s ease-in-out;
+}
+footer i:hover {
+  background-color: #17667F;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 2400px) {
+  .col-1 {
+    width: 8.3333333333%;
+  }
+  .col-2 {
+    width: 16.6666666667%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.3333333333%;
+  }
+  .col-5 {
+    width: 41.6666666667%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.3333333333%;
+  }
+  .col-8 {
+    width: 66.6666666667%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.3333333333%;
+  }
+  .col-11 {
+    width: 91.6666666667%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  a {
+    padding: 15px !important;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 15px !important;
+  }
+}
+/* Custom, iPhone Retina *//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+%button {
+  background-color: $color_second;
+  transition: background-color 0.7s ease-in-out;
+  &:hover {
+    background-color: $color_third;
+  }
+}
+%bck_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Header
+header {
+  padding: 350px 0;
+  @extend %bck_img;
+  background-image: url(../images/bg-masthead.jpg);
+  height: 100vh;
+  h1 {
+    font-size: 75px;
+  }
+  p {
+    font-size: 30px;
+  }
+  a {
+    @extend %button;
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+// End Header
+
+// Footer
+footer {
+  i {
+    background-color: $color_second;
+    transition: background-color 0.7s ease-in-out;
+    &:hover {
+      background-color: $color_third;
+    }
+  }
+}
+// End Footer
