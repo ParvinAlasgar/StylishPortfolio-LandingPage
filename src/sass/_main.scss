@@ -1,10 +1,3 @@
-%button {
-  background-color: $color_second;
-  transition: background-color 0.7s ease-in-out;
-  &:hover {
-    background-color: $color_third;
-  }
-}
 %bck_img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,12 +16,101 @@ header {
     font-size: 30px;
   }
   a {
-    @extend %button;
+    background-color: $color_second;
     display: inline-block;
     margin-top: 15px;
+    &:hover {
+      background-color: $color_third;
+    }
   }
 }
 // End Header
+
+// Main
+main {
+  // Offer
+  #offer {
+    p a {
+      color: $color_second !important;
+    }
+  }
+  // End Offer
+
+  // Service
+  #service {
+    background-color: $color_second;
+    i {
+      color: $color_second;
+    }
+  }
+  // End Service
+
+  // Welcome
+  #welcome {
+    @extend %bck_img;
+    background-image: url(../images/bg-callout.jpg);
+    padding: 150px 0;
+    h2 {
+      font-size: 50px;
+    }
+    a {
+      background-color: $color_second;
+      display: inline-block;
+      margin-top: 15px;
+      &:hover {
+        background-color: $color_third;
+      }
+    }
+  }
+  // End Welcome
+
+  // Projects
+  #projects {
+    .project {
+      @extend %bck_img;
+      height: 450px;
+      transition: transform 0.7s ease-in-out;
+      cursor: pointer;
+      &.stationary {
+        background-image: url(../images/portfolio/portfolio-1.jpg);
+      }
+      &.ice-cream {
+        background-image: url(../images/portfolio/portfolio-2.jpg);
+      }
+      &.strawberries {
+        background-image: url(../images/portfolio/portfolio-3.jpg);
+      }
+      &.workspace {
+        background-image: url(../images/portfolio/portfolio-4.jpg);
+      }
+      &:hover {
+        transform: scale(0.9);
+        &::before {
+          visibility: visible;
+        }
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: $color_second;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        visibility: hidden;
+      }
+    }
+  }
+  // End Projects
+
+  // Resist
+  #resist {
+    background-color: $color_second;
+    padding: 70px 0;
+  }
+  // End Resist
+}
+// End Main
 
 // Footer
 footer {

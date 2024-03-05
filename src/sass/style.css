@@ -1,12 +1,4 @@
-header a {
-  background-color: #1D809F;
-  transition: background-color 0.7s ease-in-out;
-}
-header a:hover {
-  background-color: #17667F;
-}
-
-header {
+main #projects .project, main #welcome, header {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -23,8 +15,74 @@ header p {
   font-size: 30px;
 }
 header a {
+  background-color: #1D809F;
   display: inline-block;
   margin-top: 15px;
+}
+header a:hover {
+  background-color: #17667F;
+}
+
+main #offer p a {
+  color: #1D809F !important;
+}
+main #service {
+  background-color: #1D809F;
+}
+main #service i {
+  color: #1D809F;
+}
+main #welcome {
+  background-image: url(../images/bg-callout.jpg);
+  padding: 150px 0;
+}
+main #welcome h2 {
+  font-size: 50px;
+}
+main #welcome a {
+  background-color: #1D809F;
+  display: inline-block;
+  margin-top: 15px;
+}
+main #welcome a:hover {
+  background-color: #17667F;
+}
+main #projects .project {
+  height: 450px;
+  transition: transform 0.7s ease-in-out;
+  cursor: pointer;
+}
+main #projects .project.stationary {
+  background-image: url(../images/portfolio/portfolio-1.jpg);
+}
+main #projects .project.ice-cream {
+  background-image: url(../images/portfolio/portfolio-2.jpg);
+}
+main #projects .project.strawberries {
+  background-image: url(../images/portfolio/portfolio-3.jpg);
+}
+main #projects .project.workspace {
+  background-image: url(../images/portfolio/portfolio-4.jpg);
+}
+main #projects .project:hover {
+  transform: scale(0.9);
+}
+main #projects .project:hover::before {
+  visibility: visible;
+}
+main #projects .project::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #1D809F;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  visibility: hidden;
+}
+main #resist {
+  background-color: #1D809F;
+  padding: 70px 0;
 }
 
 footer i {
